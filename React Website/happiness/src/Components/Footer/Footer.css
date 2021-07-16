@@ -1,0 +1,25 @@
+.footer{
+    padding-top: 10px;
+    background-color: #9C9C9C;
+}
+
+.links, .team{
+    display: inline-block;
+}
+
+.icons{
+    width: 70px;
+    margin: 10px 10px 10px 40px;
+}
+
+.team p{
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+    bottom: 36px;
+    left: 28px;
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Tourney', cursive;
+}
+
