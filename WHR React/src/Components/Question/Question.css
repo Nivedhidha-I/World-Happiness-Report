@@ -1,0 +1,33 @@
+.question{
+    background-image: url("../Question/analysis.jpg");
+    color: white;
+    background-size: 965px;
+    margin: 80px 265px 70px;
+    height: 865px;
+    background-repeat:no-repeat;
+}
+
+.question h2{
+    padding: 35px 0 0 50px;
+    font-size: 4.5rem;
+    font-family: 'Caveat Brush', cursive;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.61);
+}
+
+.question a{
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.question a:hover{
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.349);
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+}
+
+.question li{
+    margin-left: 30px;
+}

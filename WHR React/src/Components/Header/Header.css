@@ -1,0 +1,39 @@
+.logo, .Navbar{
+    display: inline-block;
+}
+
+.Navbar{
+    position: relative;
+    left: 422px;
+    top: 33px;
+}
+
+.header{
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.137);
+    height: 135px;
+}
+
+#logo{
+    width: 150px;
+    position: relative;
+    left: 50px;
+    top: 25px;
+}
+
+.Navbar a{
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(51, 51, 51, 0.726);
+}
+
+.Navbar a:hover{
+    color: #000;
+}
+
+.link{
+    position: relative;
+    margin-left: 100px;
+}
