@@ -2,7 +2,7 @@
     background-image: url("../Question/analysis.jpg");
     color: white;
     background-size: 965px;
-    margin: 80px 265px 70px;
+    margin: 0 265px;
     height: 865px;
     background-repeat:no-repeat;
 }
@@ -30,4 +30,12 @@
 
 .question li{
     margin-left: 30px;
+}
+
+@media (max-width:640px){
+    
+}
+
+@media (min-width:640px) and (max-width:1024px){
+    
 }

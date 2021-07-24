@@ -2,7 +2,7 @@
     color: white;
     background-color: #8EC3CB;
     border-radius: 15px;
-    margin: 80px 115px;
+    margin: 0 115px;
     padding: 45px 100px 0px;
 }
 
@@ -45,4 +45,12 @@
     position: relative;
     left: 50px;
     margin-right: 230px;
+}
+
+@media (max-width:640px){
+    
+}
+
+@media (min-width:640px) and (max-width:1024px){
+    
 }

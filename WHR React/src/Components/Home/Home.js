@@ -9,7 +9,6 @@ function Home(){
                 citizens perceive themselves to be. The rankings in World Happiness Report use data that come from the Gallup World Poll 
                 surveys. They are asked to rate their own current lives on that 0 to 10 scale.</p>
         </div>
-
         <div className="emoji">
             <img src={Emojis} alt="Emojis"/>
         </div>

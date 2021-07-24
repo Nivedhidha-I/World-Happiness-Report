@@ -8,6 +8,7 @@ function Footer(){
             <div className="links">
                 <a href="https://github.com/Nivedhidha-I/World-Happiness-Report"><img class="icons" src={GitHub} alt="Github"/></a>
                 <a href="https://www.kaggle.com/mathurinache/world-happiness-report?select=2020.csv"><img class="icons" src={Kaggle} alt="Kaggle"/></a>
+                <p>Copyright © 2021, All rights reserved.</p>
             </div>
             <div className="team">
                 <p>Jishnu V</p>

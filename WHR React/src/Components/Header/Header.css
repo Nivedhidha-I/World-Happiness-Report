@@ -1,15 +1,14 @@
-.logo, .Navbar{
+.logo, .navbar{
     display: inline-block;
 }
 
-.Navbar{
+.navbar{
     position: relative;
-    left: 422px;
+    left: 34%;
     top: 33px;
 }
 
 .header{
-    margin-bottom: 20px;
     background-color: rgba(128, 128, 128, 0.137);
     height: 135px;
 }
@@ -21,19 +20,71 @@
     top: 25px;
 }
 
-.Navbar a{
+.navbar a{
     text-decoration: none;
     font-family: 'Indie Flower', cursive;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875em;
     color: rgba(51, 51, 51, 0.726);
 }
 
-.Navbar a:hover{
+.navbar a:hover{
     color: #000;
 }
 
 .link{
     position: relative;
-    margin-left: 100px;
+    margin-left: 70px;
+}
+
+p.link{
+    display: inline-block;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    display: none;
+    margin-left: 15px;
+}
+
+@media (max-width:740px){
+    .header{
+        height: 105px;
+    }
+    #logo{
+        width: 100px;
+        left: 35px;
+        top: 17px;
+    }
+    p.link{
+        display: none;
+    }
+    .icon{
+        display: inline-block;
+        bottom: 12px;
+    }
+    .navbar{
+        left: 35%;
+    }
+}
+
+@media (min-width:740px) and (max-width:1154px){
+    .header{
+        height: 105px;
+    }
+    #logo{
+        width: 100px;
+        left: 35px;
+        top: 17px;
+    }
+    .link{
+        margin-left: 20px;
+        font-size: 1.35rem;
+        bottom: 12px;
+    }
+    .navbar{
+        left: 38%;
+    }
 }

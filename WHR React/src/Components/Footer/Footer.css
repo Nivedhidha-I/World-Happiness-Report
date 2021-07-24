@@ -1,24 +1,66 @@
 .footer{
-    padding-top: 10px;
     background-color: #9C9C9C;
+    text-align: center;
 }
 
 .links, .team{
     display: inline-block;
+
 }
 
 .icons{
     width: 70px;
-    margin: 10px 10px 20px 40px;
+    margin: 20px 40px 10px 0;
 }
 
 .team p{
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 25px 15px;
     position: relative;
-    left: 28px;
+    top: 3px;
     font-size: 1.6rem;
     color: white;
     font-family: 'Tourney', cursive;
 }
+.links p{
+    display: inline-block;
+    position: relative;
+    color: whitesmoke;
+    top: 7px;
+    font-size: 1.2rem;
+}
 
+@media (max-width:740px){
+    .icons{
+        width: 40px;
+        margin: 15px 0 15px 20px;
+    }
+    .team p{
+        display: none;
+    }
+    .links p{
+        margin-left: 20px;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .icons{
+        width: 55px;
+        margin: 20px 20px 10px;
+    }
+    .team p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    .team{
+        margin-bottom: 15px;
+    }
+    .links p{
+        top: 7px;
+        margin-left: 10px;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
