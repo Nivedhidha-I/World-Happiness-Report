@@ -1,26 +1,32 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import Logo from '../Header/logo.png';
-import Analysis from '../Header/analysisicon.png';
-import Home from '../Header/homeicon.png';
-import Survey from '../Header/surveyicon.png';
-import About from '../Header/aboutdataseticon.png';
-function Header(){
-    return (
-    <div>
-        <div className="header">
-            <div className="logo">
-            <Link to="/"><img id="logo" src={Logo} alt="Logo"/></Link>
-            </div>
-            <div className="navbar">
-                <Link to="/"><p className="link">Home</p><img className='icon' src={Home}/></Link>
-                <Link to="/about"><p className="link">About Dataset</p><img className='icon' src={About}/></Link>
-                <Link to="/analysis"><p className="link">Analysis</p><img className='icon' src={Analysis}/></Link>
-                <Link to="/survey"><p className="link">Survey</p><img className='icon' src={Survey}/></Link>
-            </div>
-        </div>
-    </div>
-    )
-}
+import React, { Component } from 'react';
+import Navbar from './Navbar';
 
+class Header extends Component {
+        state = { click:false }
+        handleclick = () => {
+            this.setState({
+                click:(!this.state.click)
+            })
+        }
+    render() { 
+        return (
+            <div>
+                <nav className="nav-grid">
+                    <Link to="/"><h1 className="logo">WHR</h1></Link>
+                    <i class={this.state.click? "fas fa-times fa-2x" : "fas fa-bars fa-2x"} onClick={this.handleclick}></i>
+                    <div className={this.state.click?"links active" : "links"}>
+                        {Navbar.map((nav, index) => {
+                            return (
+                                <Link key={index} className={this.state.click?"link":"link active"} onClick={this.handleclick} to={nav.url}>{nav.title}</Link>
+                            )
+                        })}
+                    </div>
+                </nav>
+            </div>
+         );
+    }
+}
+ 
 export default Header;

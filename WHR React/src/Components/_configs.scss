@@ -1,0 +1,7 @@
+$red:#FF1744;
+$black:#737070;
+$breakpoint: 780px;
+
+@mixin smaller-device {
+    @media (max-width: $breakpoint) { @content; }
+}

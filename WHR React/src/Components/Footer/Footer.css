@@ -1,66 +1,52 @@
-.footer{
-    background-color: #9C9C9C;
-    text-align: center;
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.3fr;
+  color: whitesmoke;
+  background-color: #737070;
+  justify-items: center;
 }
 
-.links, .team{
-    display: inline-block;
-
+.footer-grid .footer-title {
+  font-family: 'PT Serif', serif;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.icons{
-    width: 70px;
-    margin: 20px 40px 10px 0;
+.footer-grid .links i {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.team p{
-    display: inline-block;
-    margin: 0 25px 15px;
-    position: relative;
-    top: 3px;
-    font-size: 1.6rem;
-    color: white;
-    font-family: 'Tourney', cursive;
-}
-.links p{
-    display: inline-block;
-    position: relative;
-    color: whitesmoke;
-    top: 7px;
-    font-size: 1.2rem;
+.footer-grid .links a {
+  text-decoration: none;
 }
 
-@media (max-width:740px){
-    .icons{
-        width: 40px;
-        margin: 15px 0 15px 20px;
-    }
-    .team p{
-        display: none;
-    }
-    .links p{
-        margin-left: 20px;
-        font-weight: 100;
-        font-size: 1rem;
-    }
+.footer-grid .links .fa-github, .footer-grid .links .fa-kaggle {
+  color: #3f3e3e;
+  margin-left: 10px;
 }
 
-@media (min-width:740px) and (max-width:1024px){
-    .icons{
-        width: 55px;
-        margin: 20px 20px 10px;
-    }
-    .team p{
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-    .team{
-        margin-bottom: 15px;
-    }
-    .links p{
-        top: 7px;
-        margin-left: 10px;
-        font-weight: 100;
-        font-size: 1rem;
-    }
+.footer-grid .links .fa-kaggle {
+  margin-left: 20px;
 }
+
+@media (max-width: 780px) {
+  .footer-grid .links .fa-github, .footer-grid .links .fa-kaggle {
+    display: block;
+    margin: 0 auto 25px;
+  }
+}
+
+.footer-grid .team {
+  margin-bottom: 8px;
+}
+
+.footer-grid .team p {
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+/*# sourceMappingURL=Footer.css.map */

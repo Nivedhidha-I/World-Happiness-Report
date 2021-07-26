@@ -17,10 +17,10 @@ const parameters = {
 };
    
 const refreshSeconds = 60 * 5;
-   
-const Q7JS = props => (
+
+const AnalysisJS = props => (
     <TableauReport
-      url="https://public.tableau.com/views/WorldsSmile/BottomProblems?:language=en-US&:display_count=n&:origin=viz_share_link"
+      url="https://public.tableau.com/views/WorldsSmile/WorldsSmile?:language=en-US&:display_count=n&:origin=viz_share_link"
       filters={filters}
       parameters={parameters}
       options={options} // vizCreate options
@@ -28,4 +28,4 @@ const Q7JS = props => (
     />
 )
 
-export default Q7JS;
+export default AnalysisJS;

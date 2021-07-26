@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAA;EACF,WAAW,EAAE,KAAK;CACrB;;AAED,AAAA,SAAS,CAAC,EAAE,CAAA;EACR,MAAM,EAAE,aAAa;EACrB,KAAK,EAAE,oBAAoB;EAC3B,WAAW,EAAE,qBAAqB;EAClC,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,SAAS,CAAC,GAAG,CAAA;EACT,MAAM,EAAE,aAAa;CACxB",
+    "sources": [
+        "Q.scss",
+        "../_configs.scss"
+    ],
+    "names": [],
+    "file": "Q.css"
+}

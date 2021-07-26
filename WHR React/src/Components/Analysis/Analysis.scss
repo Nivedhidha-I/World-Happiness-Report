@@ -1,3 +1,5 @@
+@import "../configs";
+
 .Graph{
     margin-left: 150px;
 }
@@ -11,12 +13,4 @@
 
 .analysis img{
     margin: 0 0 40px 45px;
-}
-
-@media (max-width:640px){
-    
-}
-
-@media (min-width:640px) and (max-width:1024px){
-    
 }

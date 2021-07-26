@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Home.scss",
+        "../_configs.scss"
+    ],
+    "names": [],
+    "file": "Home.css"
+}
