@@ -3,7 +3,7 @@
 .footer-grid{
     display: grid;
     grid-template-columns: 1fr 1.3fr;
-    color: whitesmoke;
+    color: lighten($black, 66%);
     background-color: $black;
     justify-items: center;
 
@@ -23,10 +23,10 @@
         }
         .fa-github, .fa-kaggle{
             color: darken($black, 20%);
-            margin-left: 10px;
+            margin-left: 12px;
         }
         .fa-kaggle{
-            margin-left: 20px;
+            margin-left: 17px;
         }
 
         @include smaller-device{

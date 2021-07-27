@@ -1,7 +1,12 @@
 $red:#FF1744;
-$black:#737070;
-$breakpoint: 780px;
+$black:#2B4152;
+$breakpoint-small: 780px;
+$breakpoint-medium:1200px;
 
 @mixin smaller-device {
-    @media (max-width: $breakpoint) { @content; }
+    @media (max-width: $breakpoint-small) { @content; }
+}
+
+@mixin medium-device {
+    @media (max-width: $breakpoint-medium) and (min-width: $breakpoint-small+1){ @content; }
 }

@@ -3,8 +3,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1.3fr;
       grid-template-columns: 1fr 1.3fr;
-  color: whitesmoke;
-  background-color: #737070;
+  color: #dfe8ee;
+  background-color: #2B4152;
   justify-items: center;
 }
 
@@ -26,12 +26,12 @@
 }
 
 .footer-grid .links .fa-github, .footer-grid .links .fa-kaggle {
-  color: #3f3e3e;
-  margin-left: 10px;
+  color: #080c0f;
+  margin-left: 12px;
 }
 
 .footer-grid .links .fa-kaggle {
-  margin-left: 20px;
+  margin-left: 17px;
 }
 
 @media (max-width: 780px) {

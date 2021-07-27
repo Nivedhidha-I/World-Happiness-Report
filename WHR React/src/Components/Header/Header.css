@@ -51,7 +51,7 @@
   .nav-grid .fa-times, .nav-grid .fa-bars {
     display: block;
     cursor: pointer;
-    color: #737070;
+    color: #3d5c73;
     margin-left: 20%;
   }
 }
@@ -89,7 +89,7 @@
 }
 
 .nav-grid .links .link {
-  color: #737070;
+  color: #2B4152;
   font-family: 'Poiret One', cursive;
   font-weight: 700;
   text-decoration: none;
@@ -112,7 +112,7 @@
 
 @media (max-width: 780px) {
   .nav-grid .links.active {
-    background-color: #f9f9f9;
+    background-color: #b4c8d8;
     left: 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;

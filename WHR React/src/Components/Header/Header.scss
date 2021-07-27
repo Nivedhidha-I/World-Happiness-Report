@@ -34,7 +34,7 @@
         @include smaller-device {
             display: block;
             cursor: pointer;
-            color: $black;
+            color: lighten($black, 10%);
             margin-left: 20%;
         }
         display: none;
