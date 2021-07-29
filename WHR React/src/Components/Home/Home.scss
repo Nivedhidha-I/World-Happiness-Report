@@ -1,14 +1,14 @@
 @import "../configs";
 
 h2{
-    font-family: 'Raleway', sans-serif;
+    font-family: $headingfont;
 }
 .Report{
     display:grid;
     grid-template-columns: 2fr 1fr;
     justify-items: center;
     align-items: center;
-    background:#F4F7FC;
+    background:$blue;
     position:relative;
     height:650px;
     @include smaller-device{
@@ -44,11 +44,11 @@ h2{
             color: $red;
             letter-spacing:5px;
             font-size: 2.6rem;
-            font-family: 'Raleway', sans-serif;
+            font-family: $headingfont;
         }
         p{
             color: lighten(#000, 30%);
-            font-family: 'Dosis', sans-serif;
+            font-family: $parafont;
             font-size: 1.6rem;
             @include smaller-device{
                 font-size:1.2rem;
@@ -95,6 +95,58 @@ h2{
         }
         @include medium-device{
             font-size: 2.6rem;
+        }
+    }
+    .about-grid{
+        margin: 0 auto 6rem;
+        --auto-grid-min-size: 16rem;
+        display: grid;
+        width: 70%;
+        justify-items: center;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+        .about-container{
+            .info{
+                position: absolute;
+                top: 20px;
+                right:20px;
+                color: $black;
+                cursor: pointer;
+            }
+            position: relative;
+            background-color: $blue;
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            padding:60px 20px 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            h3{
+                font-size: 2rem;
+                font-family: $parafont;
+                color: $black;
+            }
+            .overlay{
+                width: 290px;
+                height: 380px;
+                display: none;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: rgba($black,0.9);
+                p{
+                    margin: 0 50px;
+                    color: white;
+                    font-family: $parafont;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                }
+            }
+            i:hover + .overlay {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

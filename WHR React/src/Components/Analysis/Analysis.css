@@ -1,15 +1,21 @@
-.Graph {
-  margin-left: 150px;
+.Analysis h2 {
+  color: #2B4152;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.6rem;
+  text-align: center;
 }
 
-.analysis h2 {
-  margin: 0 0 20px 70px;
-  color: rgba(0, 0, 0, 0.637);
-  font-family: 'Sacramento', cursive;
-  font-size: 3rem;
+.Analysis p {
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
 }
 
-.analysis img {
-  margin: 0 0 40px 45px;
+.Analysis .Questions h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.Analysis .Questions iframe {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=Analysis.css.map */

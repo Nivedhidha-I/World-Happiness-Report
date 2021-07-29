@@ -4,12 +4,12 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 
 class Header extends Component {
-        state = { click:false }
-        handleclick = () => {
-            this.setState({
-                click:(!this.state.click)
-            })
-        }
+    state = { click:false }
+    handleclick = () => {
+        this.setState({
+            click:(!this.state.click)
+        })
+    }
     render() { 
         return (
             <div>

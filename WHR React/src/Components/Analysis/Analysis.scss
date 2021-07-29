@@ -1,16 +1,25 @@
 @import "../configs";
 
-.Graph{
-    margin-left: 150px;
-}
 
-.analysis h2{
-    margin: 0 0 20px 70px;
-    color: rgba(0, 0, 0, 0.637);
-    font-family: 'Sacramento', cursive;
-    font-size: 3rem;
-}
 
-.analysis img{
-    margin: 0 0 40px 45px;
+.Analysis{
+    h2{
+        color: $black;
+        font-family: $headingfont;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    p{
+        font-family: $parafont;
+        font-size: 1rem;
+    }
+    .Questions{
+        h3{
+            font-family: $headingfont;
+            font-size: 2rem;
+        }
+        iframe{
+            margin: 0 auto;
+        }
+    }    
 }
