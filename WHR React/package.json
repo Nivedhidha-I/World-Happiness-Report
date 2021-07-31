@@ -9,6 +9,8 @@
     "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-jupyter-notebook": "^0.3.0",
+    "react-notebook": "^0.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "tableau-react-embed": "^1.1.0",

@@ -1,17 +1,24 @@
 @import "../configs";
 
-
-
 .Analysis{
+    background-color: $blue;
     h2{
         color: $black;
         font-family: $headingfont;
         font-size: 2.6rem;
         text-align: center;
+        margin-top: 0;
+        padding-top: 30px;
     }
     p{
         font-family: $parafont;
         font-size: 1rem;
+    }
+    iframe{
+        margin: 0 auto;
+        @include smaller-device{
+            width: 88%;
+        }
     }
     .Questions{
         h3{
@@ -20,6 +27,11 @@
         }
         iframe{
             margin: 0 auto;
+            width: 88%;
+        }
+        p{
+            font-family: $parafont;
+            font-size: 1rem;
         }
     }    
 }

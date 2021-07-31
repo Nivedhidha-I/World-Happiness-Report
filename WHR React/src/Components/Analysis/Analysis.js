@@ -4,8 +4,8 @@ import TableauReport from 'tableau-react-embed';
 import axios from 'axios';
 
 const options = {
-    height: 730,
-    width: 1200,
+    height: '800',
+    width: '1000',
     hideTabs: true,
 };
 
@@ -36,6 +36,14 @@ class Analysis extends Component {
             <div className='Analysis'>
                 <h2>Analysis</h2>
                 <p></p>
+                <h3>Q0. What is the overall situation in the world regarding happiness?</h3>
+                            <TableauReport
+                                url= "https://public.tableau.com/views/WorldsSmile/WorldsSmile?:language=en-US&:display_count=n&:origin=viz_share_link"
+                                filters= {filters}
+                                parameters= {parameters}
+                                options= {options} // vizCreate options
+                                refreshSeconds= {refreshSeconds}
+                            />
                 {this.state.data.map((Analysis) => {
                     return (
                         <div className="Questions">
@@ -47,6 +55,7 @@ class Analysis extends Component {
                                 options= {options} // vizCreate options
                                 refreshSeconds= {refreshSeconds}
                             />
+                            <p>Conclusion: {Analysis.Conclusion}</p>
                         </div>
                     )
                 })}

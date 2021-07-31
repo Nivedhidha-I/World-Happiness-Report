@@ -1,13 +1,29 @@
+.Analysis {
+  background-color: #F4F7FC;
+}
+
 .Analysis h2 {
   color: #2B4152;
   font-family: "Raleway", sans-serif;
   font-size: 2.6rem;
   text-align: center;
+  margin-top: 0;
+  padding-top: 30px;
 }
 
 .Analysis p {
   font-family: "Dosis", sans-serif;
   font-size: 1rem;
+}
+
+.Analysis iframe {
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .Analysis iframe {
+    width: 88%;
+  }
 }
 
 .Analysis .Questions h3 {
@@ -17,5 +33,11 @@
 
 .Analysis .Questions iframe {
   margin: 0 auto;
+  width: 88%;
+}
+
+.Analysis .Questions p {
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=Analysis.css.map */

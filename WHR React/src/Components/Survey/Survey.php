@@ -11,8 +11,8 @@
     die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO SurveyForm (Name, lastname, email)
-    VALUES ('John', 'Doe', 'john@example.com')";
+    $sql = "INSERT INTO SurveyForm (trustNeighbourhood, trustCloseOnes, againstValues, toleranceTriggered, fallSick, visitDoctor, financialSecurity, winFreedom, feelLonely, increaseHappiness)
+    VALUES (4, 3, 2, 5, 3, 2, 1, 2, 5, 'abc')";
 
     if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
