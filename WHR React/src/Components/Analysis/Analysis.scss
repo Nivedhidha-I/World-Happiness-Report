@@ -2,23 +2,47 @@
 
 .Analysis{
     background-color: $blue;
+    color: $black;
     h2{
-        color: $black;
         font-family: $headingfont;
-        font-size: 2.6rem;
+        font-size: 3rem;
         text-align: center;
         margin-top: 0;
         padding-top: 30px;
     }
     p{
         font-family: $parafont;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
+    .pageheader, .pagefooter{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        img{
+           
+        }
+        .content {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .pageheader{
+        img{
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .pagefooter{
+        img{
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
     iframe{
         margin: 0 auto;
-        @include smaller-device{
-            width: 88%;
-        }
+        overflow: hidden;
     }
     .Questions{
         h3{
@@ -27,11 +51,10 @@
         }
         iframe{
             margin: 0 auto;
-            width: 88%;
+            
         }
-        p{
-            font-family: $parafont;
-            font-size: 1rem;
+        h4{
+            font-family: $headingfont;
         }
     }    
 }

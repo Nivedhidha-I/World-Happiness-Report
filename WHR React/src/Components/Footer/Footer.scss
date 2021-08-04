@@ -1,45 +1,48 @@
 @import "../configs";
 
-.footer-grid{
+.footer-grid {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     color: lighten($black, 66%);
     background-color: $black;
     justify-items: center;
 
-    .footer-title{
+    .footer-title {
         font-family: 'PT Serif', serif;
         font-size: 1.5rem;
         text-align: center;
     }
 
-    .links{
-        i{
+    .links {
+        i {
             width: fit-content;
             margin: 0 auto;
         }
-        a{
+        
+        a {
             text-decoration: none;
         }
-        .fa-github, .fa-kaggle{
+
+        .fa-github, .fa-kaggle {
             color: darken($black, 20%);
             margin-left: 12px;
         }
-        .fa-kaggle{
+
+        .fa-kaggle {
             margin-left: 17px;
         }
 
-        @include smaller-device{
-            .fa-github, .fa-kaggle{
+        @include smaller-device {
+            .fa-github, .fa-kaggle {
                 display: block;
                 margin: 0 auto 25px;
             }
         }
     }
     
-    .team{
+    .team {
         margin-bottom: 8px;
-        p{
+        p {
             font-family: 'Lora', serif;
             text-align: center;
         }

@@ -15,8 +15,8 @@
 
 @media (max-width: 780px) {
   .nav-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 150px;
     -webkit-column-gap: 200px;
             column-gap: 200px;
@@ -59,8 +59,8 @@
 .nav-grid .links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   grid-gap: 50px;
   text-align: center;
   -webkit-box-pack: end;

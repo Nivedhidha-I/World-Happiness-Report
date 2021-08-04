@@ -5,7 +5,6 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Analysis from './Components/Analysis/Analysis';
 import Survey from './Components/Survey/Survey';
-import Completed from './Components/Survey/Completed';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
             <Route exact path='/'><Home/></Route>
             <Route path='/analysis'><Analysis/></Route>
             <Route path='/survey'><Survey/></Route>
-            <Route path='/surveycomplete'><Completed/></Route>
           </Switch>
         </div>
         <Footer/>  
