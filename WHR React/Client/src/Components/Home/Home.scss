@@ -1,0 +1,177 @@
+@import '../configs';
+
+h2 {
+	font-family: $headingfont;
+}
+
+.Report {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-items: center;
+	align-items: center;
+	background: $blue;
+	position: relative;
+	height: 650px;
+
+	@include smaller-device {
+		height: 500px;
+		grid-template-columns: 1fr;
+	}
+
+	@include medium-device {
+		grid-template-columns: 1fr;
+		height: 600px;
+	}
+
+	.content {
+		margin: 0 0.292rem 0 3rem;
+		padding-bottom: 100px;
+
+		@include smaller-device {
+			margin: 0 3.1rem 1rem;
+			padding-bottom: 0;
+		}
+
+		@include medium-device {
+			padding-bottom: 50px;
+			margin: 0 3.2rem;
+		}
+
+		h2 {
+			@include medium-device {
+				font-size: 3rem;
+			}
+
+			@include smaller-device {
+				font-size: 2.4rem;
+			}
+
+			span.black {
+				color: $black;
+			}
+
+			margin-top: 0;
+			color: $red;
+			letter-spacing: 5px;
+			font-size: 2.6rem;
+			font-family: $headingfont;
+		}
+		p {
+			color: lighten(#000, 30%);
+			font-family: $parafont;
+			font-size: 1.6rem;
+			@include smaller-device {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	img {
+		@include medium-device {
+			display: none;
+		}
+
+		@include smaller-device {
+			display: none;
+		}
+
+		padding-bottom: 100px;
+		margin-right: 3rem;
+		width: 500px;
+	}
+
+	.body-designe {
+		grid-column: 1/3;
+		position: absolute;
+		bottom: 0;
+
+		@include medium-device {
+			grid-column: 1/2;
+		}
+
+		@include smaller-device {
+			grid-column: 1/2;
+		}
+	}
+}
+
+.Dataset {
+	background-color: white;
+	text-align: center;
+	h2 {
+		font-size: 2.5rem;
+		display: inline-block;
+		color: $black;
+		padding-bottom: 5px;
+		border-bottom: #707070 solid 3px;
+		margin-bottom: 50px;
+
+		@include smaller-device {
+			font-size: 2rem;
+		}
+
+		@include medium-device {
+			font-size: 2.6rem;
+		}
+	}
+
+	.about-grid {
+		margin: 0 auto 6rem;
+		--auto-grid-min-size: 16rem;
+		display: grid;
+		width: 70%;
+		justify-items: center;
+		grid-gap: 3rem;
+		grid-template-columns: repeat(
+			auto-fill,
+			minmax(var(--auto-grid-min-size), 1fr)
+		);
+		.about-container {
+			.info {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				color: $black;
+				cursor: pointer;
+			}
+
+			position: relative;
+			background-color: $blue;
+			display: inline-block;
+			width: 250px;
+			height: 300px;
+			padding: 60px 20px 20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			h3 {
+				font-size: 2rem;
+				font-family: $parafont;
+				color: $black;
+			}
+
+			.overlay {
+				width: 290px;
+				height: 380px;
+				display: none;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background-color: rgba($black, 0.9);
+				p {
+					margin: 0 50px;
+					color: white;
+					font-family: $parafont;
+					font-weight: 700;
+					font-size: 1.1rem;
+				}
+			}
+
+			i:hover + .overlay {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
