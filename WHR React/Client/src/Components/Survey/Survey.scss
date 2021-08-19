@@ -60,10 +60,11 @@
 				}
 			}
 
-			.survey-opection {
+			.survey-options {
 				display: grid;
 				grid-template-columns: 80%;
 				grid-gap: 5px;
+
 				input[type='radio']:after {
 					width: 12px;
 					height: 12px;
