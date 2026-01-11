@@ -166,7 +166,7 @@ h2 {
 				}
 			}
 
-			i:hover + .overlay {
+			div.about-container:hover + .overlay {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
