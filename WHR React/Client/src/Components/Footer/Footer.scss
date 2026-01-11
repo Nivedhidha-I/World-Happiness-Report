@@ -9,21 +9,34 @@
 		font-family: 'PT Serif', serif;
 		font-size: 1.5rem;
 		text-align: center;
+		color: white;
 	}
 
 	.links {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+		gap: 2rem;
 		i {
 			width: fit-content;
 			margin: 0 auto;
 		}
 
 		a {
-			text-decoration: none;
-		}
+	        text-decoration: none;
+	        transition: transform 0.3s ease;
+        
+	        &:hover {
+	            transform: translateY(-5px);
+	        }
+    	}
 
-		.fa-github,
+		.fa-github {
+        	color: #ffffff; 
+			margin-left: 12px;
+    	}
 		.fa-kaggle {
-			color: darken($black, 20%);
+			color: #20beff;
 			margin-left: 12px;
 		}
 
@@ -32,6 +45,7 @@
 		}
 
 		@include smaller-device {
+			flex-direction: row;
 			.fa-github,
 			.fa-kaggle {
 				display: block;
