@@ -1,8 +1,6 @@
 @import '../configs';
 
 .footer-grid {
-	display: grid;
-	grid-template-columns: 1fr 1.3fr;
 	color: lighten($black, 66%);
 	background-color: $black;
 	justify-items: center;
@@ -39,14 +37,6 @@
 				display: block;
 				margin: 0 auto 25px;
 			}
-		}
-	}
-
-	.team {
-		margin-bottom: 8px;
-		p {
-			font-family: 'Lora', serif;
-			text-align: center;
 		}
 	}
 }
