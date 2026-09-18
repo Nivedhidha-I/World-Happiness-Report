@@ -39,3 +39,5 @@ The repository is logically divided into two primary sections: the core data sci
 * Website Layout/: Contains the website layout images. 
 
 * World Happiness Report Dataset/: Anonymized or sample data files used for the project.
+
+Note: Deployed at https://world-happiness-report-neon.vercel.app/analysis
